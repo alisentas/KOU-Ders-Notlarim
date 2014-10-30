@@ -3,7 +3,7 @@
 #include <math.h>
 
 // Asal sayi bulmaya yarayan program
-// Ali SENTAS
+// Ali SENTAS - 2014
 
 int main()
 {

@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+
 // Aralarinda asal sayilari bulan program
-// Ali SENTAS
+// Ali SENTAS - 2014
 
 int main()
 {

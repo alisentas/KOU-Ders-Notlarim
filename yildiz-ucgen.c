@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// Kullanicinin girdigi sayi kadar uzunlukta bir uzgen cizen bir program
+// Ali SENTAS - 2014
+
 int main()
 {
     int i, j, genislik, uzunluk, kalan;
