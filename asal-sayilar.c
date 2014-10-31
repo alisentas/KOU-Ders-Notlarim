@@ -26,7 +26,7 @@ int main()
     printf("Bolenler: ");
     for(i = 2; i < kok; i++){
 		if(sayi % i == 0){
-			printf("%d, %d", i, sayi / i); //i bolen oluyor, onu yazdir yani
+			printf("%d, %d, ", i, sayi / i); //i bolen oluyor, onu yazdir yani
 			// (sayi / i) de bolen oluyor, mesela 15'in bolenleri 3 ve 5 gibisinden
 			asalmi = 0; //sayinin boleni var, asal olamaz
 		}
