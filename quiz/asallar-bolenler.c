@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// Bolen ve asal sayi bulma quizi
+// Ali SENTAS
+
 int main()
 {
     int sayi, sayac, asalmi;
