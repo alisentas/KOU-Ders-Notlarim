@@ -17,6 +17,15 @@ int kontrol(char x);
 int main()
 {
     srand(time(NULL));
+    //printf("===============================================================================\n==                                XOX Oyunu                                  ==\n==                              yapan: Ali Sentas                            ==\n===============================================================================\n\n");
+    printf("================================================================================\n");
+    printf("  db    db  .d88b.  db    db       .d88b.  db    db db    db d8b   db db    db  \n");
+    printf("  `8b  d8' .8P  Y8. `8b  d8'      .8P  Y8. `8b  d8' 88    88 888o  88 88    88  \n");
+    printf("   `8bd8'  88    88  `8bd8'       88    88  `8bd8'  88    88 88V8o 88 88    88  \n");
+    printf("   .dPYb.  88    88  .dPYb.       88    88    88    88    88 88 V8o88 88    88  \n");
+    printf("  .8P  Y8. `8b  d8' .8P  Y8.      `8b  d8'    88    88b  d88 88  V888 88b  d88  \n");
+    printf("  YP    YP  `Y88P'  YP    YP       `Y88P'     YP    ~Y8888P' VP   V8P ~Y8888P'  \n");
+    printf("================================================================================\n\n");
     printf("XOX oyununa hosgeldiniz, siz X karakterini kullanacaksiniz. Giris yaparken koordinatlari arada bir bosluk birakip tek satirda girebilirsiniz. Ornegin: '2 1' gibi.\nBasarilar\n\n");
 
     while(!bitis){
@@ -36,7 +45,7 @@ int main()
  */
 void yaz(){
     int i, j;
-    printf("  1 2 3\n");
+    printf("\n  1 2 3\n");
     for(i = 0; i < 3; i++){
         printf("%d", i + 1);
         for(j = 0; j < 3; j++){
@@ -77,9 +86,10 @@ void giris(){
  */
 void bilgisayar_hamlesi(){
     int x, y;
+    printf("Bilgisayar hamlesini yapiyor...\n");
     x = rand() % 3;
     y = rand() % 3;
-    while(tahta[x][y] != '.'){
+    while(tahta[y][x] != '.'){
         x = rand() % 3;
         y = rand() % 3;
     }
@@ -87,7 +97,7 @@ void bilgisayar_hamlesi(){
 
     if(kontrol('O')){
         yaz();
-        printf("Bilgisayar kazandi. :(");
+        printf("Bilgisayar kazandi. :(\n\n");
         bitis = 1;
     }
 }
