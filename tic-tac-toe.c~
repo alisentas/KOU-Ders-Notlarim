@@ -297,7 +297,7 @@ void bilgisayar_hamlesi(){
         x2found = 0;
         dotfound = 0;
         for(x = 0; x < 3; x++){
-            if(tahta[x][2 - x] == 'X'){
+            if(tahta[x][2 - x] == 'O'){
                 if(!xfound) xfound++;
                 else x2found++;
             }else if(tahta[x][2 - x] == '.'){
@@ -345,4 +345,3 @@ int kontrol(char x){
     if(tahta[0][2] == x && tahta[1][1] == x && tahta[2][0] == x) return 1;
     return 0;
 }
-
