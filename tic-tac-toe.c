@@ -155,7 +155,17 @@ void bilgisayar_hamlesi(){
                 for(y = 0; y < 3; y++){
                     if(x == 1 && y == 1) continue;
                     if(tahta[y][x] == 'X'){
-                        tahta[2 - y][2 - x] = 'O';
+                        if(tahta[2 - y][2 - x] == '.'){
+                            tahta[2 - y][2 - x] = 'O';
+                        }else{
+                            x = rand() % 3;
+                            y = rand() % 3;
+                            while(tahta[y][x] != '.'){
+                                x = rand() % 3;
+                                y = rand() % 3;
+                            }
+                            tahta[y][x] = 'O';
+                        }
                     }
                 }
             }
