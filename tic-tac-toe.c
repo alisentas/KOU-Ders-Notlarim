@@ -35,6 +35,7 @@ int main()
         giris();
         if(!bitis) khamle++;
         if(khamle == 6){
+            yaz();
             printf("\nOyun berabere...\n\n");
             bitis = 1;
         }
